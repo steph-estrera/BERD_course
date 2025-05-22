@@ -14,5 +14,5 @@ ggplot(data = south_asia, aes(x = date, y = life_exp, color = country)) +
   geom_line() +
   geom_text(data = south_asia_labels, aes(label = country), hjust = -0.1, size = 4) +
   expand_limits(x = max(south_asia$date) + 3) + 
-  theme_minimal() +
+  theme_minimal() + #theme for ggplot - very minimal with no background annotations
   theme(legend.position = "none")
